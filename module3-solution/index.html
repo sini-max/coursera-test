@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment Solution</title>
+    <title>Module 3 Assignment Solution</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="nav-custom">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-dropdown" aria-expanded="false">
@@ -26,9 +26,9 @@
 
       <div class="collapse navbar-collapse" id="main-nav-dropdown">
         <ul class="nav navbar-nav visible-xs text-center">
-          <li><a href="#">Chicken</a></li>
-          <li><a href="#">Beef</a></li>
-          <li><a href="#">Sushi</a></li>
+          <li><a href="#chicken-section" data-toggle="collapse" data-target="#main-nav-dropdown">Chicken</a></li>
+          <li><a href="#beef-section" data-toggle="collapse" data-target="#main-nav-dropdown">Beef</a></li>
+          <li><a href="#sushi-section" data-toggle="collapse" data-target="#main-nav-dropdown">Sushi</a></li>
         </ul>
       </div>
     </div>
@@ -36,11 +36,30 @@
 
   <h1 class="text-center">Our Menu</h1>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div id="main-content" class="col-xs-12">
-        <p>This is where your content text will go. It needs to be long enough to scroll so we can test the responsiveness properly!</p>
+      
+      <div class="col-md-4 col-sm-6 col-xs-12 section-box" id="chicken-section">
+        <div class="inner-content">
+          <div class="section-title title-chicken text-center">Chicken</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum pretium sodales. Curabitur vel leo nec elit luctus interdum. Aliquam porttitor erat eget consequat interdum. Maecenas sed tortor ut diam feugiat vulputate. Ut in ante sed ex elementum sollicitudin vitae id lectus. Vivamus congue, lorem ac porta sodales, mi diam elementum leo, sed dictum dolor turpis nec diam. Proin vestibulum eros sit amet dolor accumsan, nec varius libero consectetur.</p>
+        </div>
       </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 section-box" id="beef-section">
+        <div class="inner-content">
+          <div class="section-title title-beef text-center">Beef</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum pretium sodales. Curabitur vel leo nec elit luctus interdum. Aliquam porttitor erat eget consequat interdum. Maecenas sed tortor ut diam feugiat vulputate. Ut in ante sed ex elementum sollicitudin vitae id lectus. Vivamus congue, lorem ac porta sodales, mi diam elementum leo, sed dictum dolor turpis nec diam. Proin vestibulum eros sit amet dolor accumsan, nec varius libero consectetur.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12 section-box" id="sushi-section">
+        <div class="inner-content">
+          <div class="section-title title-sushi text-center">Sushi</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum pretium sodales. Curabitur vel leo nec elit luctus interdum. Aliquam porttitor erat eget consequat interdum. Maecenas sed tortor ut diam feugiat vulputate. Ut in ante sed ex elementum sollicitudin vitae id lectus. Vivamus congue, lorem ac porta sodales, mi diam elementum leo, sed dictum dolor turpis nec diam. Proin vestibulum eros sit amet dolor accumsan, nec varius libero consectetur.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
